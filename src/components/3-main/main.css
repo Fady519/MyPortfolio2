@@ -1,0 +1,190 @@
+
+
+main {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;   /* أهم حاجة */
+}
+
+
+/* =============================
+ 1. Left Section  => Buttons
+ ============================= */
+.left-section{
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.left-section button{
+    background-color: #24252e;
+    width: 11rem;
+    padding: 0.75rem 0;
+    font-size: 1.05rem;
+    opacity: 0.6;
+    border-radius: 6px;
+    transition: 0.3s;
+    color: white;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.left-section button:hover{
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+.left-section button.active{
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    border: 1px solid var(--blue);
+    padding: 0.8rem 0;
+    background-color: #1c1d25;
+    background: #6C63FF;
+    color: white;
+    transform: translateX(5px);
+}
+
+.light .left-section button.active{
+    border: 1px solid #000;
+}
+
+
+/* =============================
+ 2. Right Section  => Cards
+ ============================= */
+
+.right-section{
+    flex-grow: 1;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 2rem;
+    justify-content: center;
+    
+}
+
+
+
+.card{
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    transition: 0.3s;
+    border-radius: 6px;
+    background-image: linear-gradient(
+        rgba(255,255,255,0.04), 
+        rgba(255,255,255,0.04)
+    );
+    margin-top: 0 !important;
+    box-shadow: -2px 12px 2px rgba(0, 0, 0, 0.2), 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.light .card, .light .card:hover{  
+    border: none;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation when cards appear */
+.card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* keyframes */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.card:hover{
+    border: 1px solid var(--blue);
+    transform: scale(1.02) rotate(1deg);
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 180px; /* صغّرها هنا */
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+
+.card .box{
+    padding: 1rem 0.4rem;
+}
+
+.card .title{
+    color: var(--title);
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+.card .subtitle{
+    color: var(--subtitle);
+    font-size: 0.8rem;
+    margin: 0.7rem 0 1.2rem;
+}
+
+.card .icons{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon{
+    font-size: 1.35rem;
+    color: var(--subtitle);
+    margin-right: 8px;
+    transition: 0.2s;
+}
+
+.icon:hover{
+    color: var(--icon-hover);
+    transform: scale(1.15);
+}
+
+.icon-arrow{
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.card a.link{
+    font-size: 0.9rem;
+    color: var(--blue);
+    margin-right: 12px;
+}
+
+/* =============================
+  Responsive
+ ============================= */
+@media (max-width: 600px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+        gap: 2.6rem;
+    }
+
+    .left-section{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .left-section button{
+        width: 7rem;
+        padding: 0.8rem 0;
+        font-size: 0.9rem;
+    }
+}

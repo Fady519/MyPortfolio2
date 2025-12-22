@@ -1,0 +1,156 @@
+
+/* ======================
+        1. Header Design
+   ====================== */
+
+header {
+   justify-content: center;
+  position: relative;
+  padding: 0 2.4rem;
+  margin-top: 1.2rem;
+}
+
+header nav {
+  background-color: var(--bg-header);
+  padding: 0.77rem 1.6rem;
+  border-radius: 55px;
+  box-shadow: 1px 1px 40px rgba(53, 50, 50, 0.3);
+}
+
+header ul {
+  gap: 16px;
+}
+
+header ul li a {
+  color: var(--title);
+  opacity: 0.9;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+header ul li a:hover {
+  color: var(--blue);
+  opacity: 1;
+  font-size: 1.1rem;
+}
+
+header button {
+  font-size: 1.2rem;
+}
+
+header .menu {
+  display: none;
+    position: absolute;
+  left: 1rem;
+}
+
+
+/* ===== Icon buttons ===== */
+header .icon-redaus,
+header .mode {
+  background-color: var(--bg-header);
+  height: 2.4rem;
+  width: 2.4rem;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--subtitle);
+  border: 1px solid rgba(244, 244, 96, 0.249);
+  transition: 0.2s;
+}
+
+header .mode {
+  position: absolute;
+  right: 1rem;
+  
+}
+
+
+header .icon-redaus:hover,
+header .mode:hover {
+  color: var(--title);
+  border: 1px solid rgb(244, 165, 96);
+}
+
+header .icon-redaus {
+  font-size: 1.3rem;
+}
+
+header .icon-redaus:hover {
+  font-size: 1.6rem;
+  color: crimson;
+  rotate: 180deg;
+}
+
+/* ===== Model Menu ===== */
+header .fixed {
+  position: fixed;
+  inset: 0;
+  z-index: 11;
+  background-color: rgba(40, 40, 48, 0.91);
+  backdrop-filter: blur(4px);
+}
+
+@keyframes mymove {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+header .fixed ul.model {
+  animation: mymove 0.5s ease;
+  width: 85%;
+  margin: 2rem auto 0 auto;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--secondary);
+}
+
+header .fixed ul.model li {
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem 0.77rem;
+}
+
+header .fixed ul.model li:last-child {
+  border: none;
+}
+
+header .fixed ul.model li a {
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  header nav {
+    display: none;
+  }
+
+  header .menu {
+    display: flex;
+  }
+}
+/* ===== Close Button (Right + Rotate on Hover) ===== */
+header .fixed ul.model .close-btn {
+  display: flex;
+  justify-content: flex-end;
+  border: none !important;
+  padding-bottom: 0 !important;
+}
+
+header .fixed ul.model .close-btn button {
+  font-size: 1.6rem;
+  color: var(--title);
+  transition: 0.3s;
+}
+
+header .fixed ul.model .close-btn button:hover {
+  rotate: 180deg;
+  color: crimson;
+}

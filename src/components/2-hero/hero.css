@@ -1,0 +1,83 @@
+
+
+ .hero {
+  margin-top: 3rem;
+}
+
+.hero .parent-avatar {
+  align-items: end;
+  gap: 0.6rem;
+}
+
+.hero .left-section {
+  flex-grow: 1;
+}
+
+.hero .icon-verified {
+  color: var(--blue);
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.hero .left-section .avatar {
+  width: 88px;
+  border-radius: 50%;
+  border: 1px solid darkorange;
+  padding: 1px;
+  box-shadow: 2px 2px 40px gray inset;
+}
+
+/* Title (تم إصلاح الخطأ هنا) */
+.hero .title {
+    font-size: 2rem;
+    line-height: 2rem;
+  margin: 24px 0;
+  color: var(--title);
+}
+
+
+/* Subtitle (إصلاح خطأ selector) */
+.hero .subtitle {
+  color: var(--subtitle);
+    font-size: 1.2rem;
+    line-height: 2rem;
+    max-width: 700px;
+    opacity: 0.9;
+  margin-bottom: 32px;
+}
+
+.hero .all-icons {
+  font-size: 1.3rem;
+  gap: 1.5rem;
+  color: var(--subtitle);
+}
+
+.hero .all-icons .icon {
+  transition: 0.3s;
+}
+
+.hero .all-icons .icon:hover {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--blue);
+  transition: 0.3s;
+}
+
+/* Right Section */
+.hero .right-section {
+  flex-grow: 1;
+}
+
+.hero .animation{
+  width: 100%;
+  translate: 100px 40px;
+
+}
+
+@media (max-width: 1200px){
+  .hero .animation {
+    display: none;
+  }
+}
+
+
