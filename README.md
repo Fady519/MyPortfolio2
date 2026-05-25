@@ -4,6 +4,13 @@
 
 </div>
 
+> ### ⚠️ ARCHIVED VERSION / نسخة مؤرشفة
+> **This is an older legacy portfolio.** I have rebuilt my official, up-to-date professional portfolio using **Next.js 16, Tailwind CSS v4, and TypeScript** for a cleaner architecture and better performance.
+> 
+> 👉 **[Click here to visit my LATEST Live Portfolio](https://fady519.github.io/Portfolio-Fady/)** 🚀
+
+---
+
 <div align="center">
 
 [![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Now-6366F1?style=for-the-badge)](https://fady519.github.io/MyPortfolio2/)
@@ -72,85 +79,3 @@ Smooth animations. Dark mode. Fully responsive. Every pixel intentional.
 ---
 
 ## 📁 Project Structure
-
-```
-MyPortfolio2/
-│
-├── public/                  # Static assets
-├── src/
-│   ├── assets/              # Images, icons, Lottie files
-│   ├── components/          # Reusable UI components
-│   │   ├── Navbar.jsx
-│   │   ├── Hero.jsx
-│   │   ├── Projects.jsx
-│   │   ├── Contact.jsx
-│   │   └── Footer.jsx
-│   ├── App.jsx              # Root component
-│   └── main.jsx             # Entry point
-│
-├── index.html
-├── vite.config.js
-├── tailwind.config.js
-└── package.json
-```
-
----
-
-## ⚙️ Getting Started
-
-### Prerequisites
-
-- Node.js `v18+`
-- npm or yarn
-
-### Installation
-
-```bash
-# 1. Clone the repo
-git clone https://github.com/Fady519/MyPortfolio2.git
-cd MyPortfolio2
-
-# 2. Install dependencies
-npm install
-
-# 3. Start dev server
-npm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-### Deploy to GitHub Pages
-
-```bash
-npm run deploy
-```
-
----
-
-## 📬 Contact
-
-<div align="center">
-
-Got an opportunity or just want to say hi?
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Fady%20Kaiser-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fady-kaiser/)
-[![GitHub](https://img.shields.io/badge/GitHub-Fady519-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Fady519)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Now-6366F1?style=for-the-badge)](https://fady519.github.io/MyPortfolio2/)
-
-</div>
-
----
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,50:8B5CF6,100:EC4899&height=100&section=footer" width="100%"/>
-
-**⭐ If you like this portfolio, drop a star — it means a lot!**
-
-</div>
